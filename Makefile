@@ -2,7 +2,7 @@
 
 all: install
 
-build: format
+build:
 	@bash build.sh
 
 install: format
@@ -10,7 +10,8 @@ install: format
 
 clean:
 	rm -rf output
-	rm -rf mac_tools.tgz
+	rm -rf fsync.tgz
+	rm -rf fsync.zip
 
 format:
 	@bash build.sh format
